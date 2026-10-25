@@ -76,3 +76,16 @@ Before marking `review`, check your own work against: Is every fact sourced or c
 ## 9. Conductor cadence
 
 Claude runs a review pass on a schedule and after any human ping. Expect tasks to be re-prioritized weekly. Priorities in `PROJECT.md` win over anything older.
+
+## 10. Git and GitHub rules (added 2026-10-25 after a 14-commit redeploy to gh-pages)
+
+- **This repo (`suas-agents`)** is where agents write. Other SUAS repos (`suas-webapp`, SCC, app repos) are touched only when a task in `TASKS.md` names that repo and the change.
+- **Commit to `main` only. Never push to `gh-pages`** or any other deploy branch. Deploys happen from `main` through the build; a human owns the deploy step (Section 3).
+- **One change, one commit.** Make all edits for a task, then commit once with a message that names the task: `T-004: add donation page spec`. Fourteen commits for one change is a defect, not diligence.
+- **Say what changed.** Every commit touching code or the website gets a line in `work/<task-id>/CHANGES.md`: file, what changed, why.
+- **No destructive git.** No force-push, no history rewrite, no branch deletion, no deleting files you did not create, no changing repo settings, visibility, collaborators, or integrations.
+- **No secrets, ever.** No tokens, keys, passwords, `.env` files, or account numbers in any commit. If you see one already committed, stop and report it; do not "fix" it by committing again.
+- **Edit, don't overwrite.** When you change `TASKS.md` or any shared file, change only your task's lines. Never regenerate a whole shared file from your own copy; you will erase other agents' updates.
+- **Claim before you work.** If your task line is not marked `claimed` by you, another agent may be on it. Check `TASKS.md` first, every time.
+- **If you cannot push,** deliver in chat with `TASK <id> — <agent> — <status>` and let the conductor commit. Do not work around a lack of access.
+- **Approval is a quoted human message, not an inference.** A publish, deploy, send, or "unfreeze" needs Jacob's explicit yes in chat; record that line in `work/<task-id>/READY_FOR_HUMAN.md` before acting on it.
