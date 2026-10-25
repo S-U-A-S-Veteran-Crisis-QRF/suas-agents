@@ -71,8 +71,11 @@ One page for Jose and Brant explaining this repo, the gates, and what they'll be
 Rewrite `work/T-003/RLS_DEFAULT_DENY_MIGRATION.sql` against the actual SCC v2.0 PostgreSQL schema, audit every veteran-data table for ENABLE+FORCE RLS with no permissive leftovers, fix the profiles-policy recursion, and run the pgTAP suite green. Output: a migration a human can run on staging.
 
 ## T-014 · ERG/ITAD directory — add one public contact channel per company
-**Best agent:** Grok · **Backup:** Gemini / ChatGPT · **Status:** open · **Priority:** P2
+**Best agent:** Grok · **Backup:** Gemini / ChatGPT · **Status:** review — Gemini — 2026-10-25 · **Priority:** P2
 For each of the 20 companies in `work/T-007/ERG_TARGET_LIST.md`: the one public channel that accepts nonprofit hardware/in-kind requests (program page URL, request form, or published giving inbox), the ERG name confirmed against a public page, and the named ITAD vendor if any. Table with a Source column for every row. No personal emails or private contacts. Output: `work/T-007/CONTACT_CHANNELS.md`.
+- **Did:** Gemini delivered the 20-row matrix (signed correctly). Claude fetched every URL: 2 verified corporate channels (Lockheed, Oracle), 3 verified ITAD partners (TechSoup, Human-I-T, SVDE), 7 bot-blocked, 5 dead, 5 generic. Filed with per-row verdicts; Claude wrote 6 filled messages in `work/T-007/OUTREACH_FILLED.md`.
+- **Needs a human:** Jacob — see `work/T-007/READY_FOR_HUMAN.md`: one TechSoup order, four single sends, one Cisco page to open.
+- **Next:** Jacob names 3 companies for LinkedIn ERG notes; Claude drafts them. Dead/blocked rows stay closed unless a human verifies the page.
 
 ---
 
