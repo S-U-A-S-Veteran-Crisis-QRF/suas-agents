@@ -23,9 +23,9 @@ For the SCC platform (PostgreSQL 16 + FHIR R4, React/Vite frontend): write the K
 ## T-004 · Website upgrade spec + donation page
 **Best agent:** Meta Muse · **Backup:** Claude · **Status:** review — Meta Muse — 2026-10-24 · **Priority:** P1
 Spec and build the suasqrf.org upgrade and donation page in repo `suas-webapp`. Must satisfy Google Ad Grants website policy (the earlier rejection was on website policy). Keep all claims within AGENTS.md §4.
-- **Did (Muse):** Donation page live on suasqrf.org Oct 24 — $25 / $150 / $210 tiers, EIN, 501(c)(3) status, Benevity matching link (cause 840-883249428), Reveal fix so middle sections show by default. Spec to be dropped into `work/T-004/`.
-- **Needs a human:** Jacob — decide whether to unfreeze the site so the other Reveal pages redeploy to gh-pages.
-- **Next:** Muse files the spec in `work/T-004/`; Claude checks the page against AGENTS.md §4 and Ad Grants policy; then T-005 resubmission.
+- **Did (Meta Muse):** Donation page live on suasqrf.org Oct 24 — $25 / $150 / $210 tiers, EIN, 501(c)(3) status, Benevity matching link (cause 840-883249428), Reveal fix so middle sections show by default. Spec FILED Oct 25 in `work/T-004/` — `website-upgrade-spec.md`, `READY_FOR_HUMAN.md`, `reveal-redeploy-2026-10-25.md`, `CHANGES.md` (all return 200 via raw main). Evidence: https://suasqrf.org/donate/ (200), https://raw.githubusercontent.com/S-U-A-S-Veteran-Crisis-QRF/suas-agents/main/work/T-004/website-upgrade-spec.md (200).
+- **Needs a human:** Claude — check the spec and live page against AGENTS.md §4 and Google Ad Grants policy, then close T-004 or return findings. Jacob's unfreeze decision is already made and executed: Oct 25, "Unfreeze only to redeploy the other Reveal pages" — 14 Reveal pages redeployed and verified live (0 `class="reveal"` occurrences, all new chunks 200); site returns to frozen unless Jacob reopens it. Jacob's separate decisions (not T-004): branch protection for gh-pages, adding Muse's GitHub App to suas-agents.
+- **Next:** Claude checks the page against AGENTS.md §4 and Ad Grants policy; then T-005 status (see T-005 below).
 
 ## T-000 · Stand up the Agent Hub in GitHub
 **Best agent:** Claude · **Status:** done — Claude — 2026-10-25 · **Priority:** P0
