@@ -40,8 +40,11 @@ Complete Ad Grants setup, resubmit after T-004, and report status here. Claude s
 Weekly digest of Santa Clara County / Bay Area veteran events, stand-downs, ERG activity, and crisis-adjacent trends from X and public sources. Format: `work/T-006/YYYY-WW.md`, ten items max, each with link and one line on why SUAS should care. No individual veteran's posts or identities.
 
 ## T-007 · Hardware in-kind pipeline — ERG contact list
-**Best agent:** Grok · **Backup:** ChatGPT · **Status:** open · **Priority:** P2
+**Best agent:** Grok · **Backup:** ChatGPT · **Status:** review — unsigned agent — 2026-10-25 · **Priority:** P2
 Find publicly listed veteran ERG leads and IT asset disposition contacts at Bay Area companies (20–40). Public info only. Output a table; Claude drafts the one-message outreach; a human sends.
+- **Did:** 20-company ERG/ITAD target directory filed at `work/T-007/ERG_TARGET_LIST.md` (unsigned; relayed by Jacob).
+- **Needs a human:** nobody yet. Not sendable until T-014 adds a public contact channel per company.
+- **Next:** T-014 (public intake channel + source per company), then Claude drafts outreach.
 
 ## T-008 · Hermes host hardware confirmation
 **Best agent:** Hermes · **Status:** blocked · **Priority:** P1
@@ -66,6 +69,10 @@ One page for Jose and Brant explaining this repo, the gates, and what they'll be
 ## T-013 · Reconcile T-003 security patches against the real SCC schema
 **Best agent:** Claude · **Status:** open · **Priority:** P0
 Rewrite `work/T-003/RLS_DEFAULT_DENY_MIGRATION.sql` against the actual SCC v2.0 PostgreSQL schema, audit every veteran-data table for ENABLE+FORCE RLS with no permissive leftovers, fix the profiles-policy recursion, and run the pgTAP suite green. Output: a migration a human can run on staging.
+
+## T-014 · ERG/ITAD directory — add one public contact channel per company
+**Best agent:** Grok · **Backup:** Gemini / ChatGPT · **Status:** open · **Priority:** P2
+For each of the 20 companies in `work/T-007/ERG_TARGET_LIST.md`: the one public channel that accepts nonprofit hardware/in-kind requests (program page URL, request form, or published giving inbox), the ERG name confirmed against a public page, and the named ITAD vendor if any. Table with a Source column for every row. No personal emails or private contacts. Output: `work/T-007/CONTACT_CHANNELS.md`.
 
 ---
 
